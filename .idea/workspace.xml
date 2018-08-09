@@ -48,17 +48,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a49b595-2364-45d9-bf19-2b1bfbcedefc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nunol.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Array.hpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/common/ByteOrder.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Types.hpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/common/UUID.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/common/UUID.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/exceptions/Exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/exceptions/Exception.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/memory/MemoryPool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/memory/MemoryPool.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/src/cmake-build-release/" />
@@ -110,7 +104,7 @@
           <entry key="gitignore" value="8" />
           <entry key="h" value="79" />
           <entry key="hpp" value="2779" />
-          <entry key="txt" value="340" />
+          <entry key="txt" value="592" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -118,7 +112,7 @@
           <entry key="CMakeLists.txt" value="340" />
           <entry key="Doxygen file" value="45" />
           <entry key="ObjectiveC" value="3473" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -211,8 +205,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/ByteOrder.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
+            <state relative-caret-position="795">
+              <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
               <folding>
                 <element signature="e#795#815#0" expanded="true" />
                 <element signature="e#2963#2975#0" expanded="true" />
@@ -398,7 +392,7 @@
       <workItem from="1533769621324" duration="14789000" />
       <workItem from="1533831135802" duration="552000" />
       <workItem from="1533841335363" duration="968000" />
-      <workItem from="1533842322333" duration="6428000" />
+      <workItem from="1533842322333" duration="6680000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on common lib&#10;* Added a MemoryPool&#10;* Added a ThreadPool&#10;* Added a ThreadSafeQueue&#10;* Added a Exception">
       <created>1533831004919</created>
@@ -407,11 +401,32 @@
       <option name="project" value="LOCAL" />
       <updated>1533831004919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added more Exception types&#10;* DataException&#10;* SyntaxException">
+      <created>1533850308982</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533850308982</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed Exception inclusion in MemoryPool">
+      <created>1533850376695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533850376695</updated>
+    </task>
+    <task id="LOCAL-00004" summary="* Added a Types.hpp with mostly more readable typedefs&#10;* Added an Array STL container like C-style array">
+      <created>1533850463771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533850463771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30050000" />
+    <option name="totallyTimeSpent" value="30302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,7 +469,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started working on common lib&#10;* Added a MemoryPool&#10;* Added a ThreadPool&#10;* Added a ThreadSafeQueue&#10;* Added a Exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on common lib&#10;* Added a MemoryPool&#10;* Added a ThreadPool&#10;* Added a ThreadSafeQueue&#10;* Added a Exception" />
+    <MESSAGE value="Added more Exception types&#10;* DataException&#10;* SyntaxException" />
+    <MESSAGE value="Fixed Exception inclusion in MemoryPool" />
+    <MESSAGE value="* Added a Types.hpp with mostly more readable typedefs&#10;* Added an Array STL container like C-style array" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added a Types.hpp with mostly more readable typedefs&#10;* Added an Array STL container like C-style array" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/dal/library.cpp">
@@ -680,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/ByteOrder.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
+        <state relative-caret-position="795">
+          <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
           <folding>
             <element signature="e#795#815#0" expanded="true" />
             <element signature="e#2963#2975#0" expanded="true" />

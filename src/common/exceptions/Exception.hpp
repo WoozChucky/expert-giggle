@@ -191,7 +191,7 @@ namespace giggle::common::exception
 		CLS(const std::string& l_msg, const std::string& l_arg, int l_code = CODE);	\
 		CLS(const std::string& l_msg, const Exception& l_exc, int l_code = CODE);	\
 		CLS(const CLS& l_exc);														\
-		~CLS() throw();																\
+		~CLS() noexcept;																\
 		CLS& operator = (const CLS& l_exc);											\
 		const char* Name() const noexcept;											\
 		const char* ClassName() const noexcept;										\

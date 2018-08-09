@@ -20,7 +20,6 @@
 #include "../exceptions/Exception.hpp"
 
 using namespace giggle::common::memory;
-using namespace giggle::common::exception;
 
 MemoryPool::MemoryPool(std::size_t l_block_size, int l_pre_alloc, int l_max_alloc):
 	_block_size(l_block_size),
@@ -71,7 +70,7 @@ void *MemoryPool::GetMemory()
 			return new char[_block_size];
 		}
 		else
-			throw OutOfMemoryException("MemoryPool exhausted.");
+			throw giggle::common::exception::OutOfMemoryException("MemoryPool exhausted.");
 	}
 	else
 	{

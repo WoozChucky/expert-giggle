@@ -48,7 +48,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a49b595-2364-45d9-bf19-2b1bfbcedefc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nunol.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Array.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/ByteOrder.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/Types.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/UUID.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/UUID.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/exceptions/Exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/exceptions/Exception.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/memory/MemoryPool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/memory/MemoryPool.cpp" afterDir="false" />
     </list>
@@ -72,39 +80,44 @@
     <session id="-1376102562">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="4" />
+          <entry key="cmake" value="1" />
+          <entry key="cpp" value="8" />
           <entry key="gitignore" value="1" />
-          <entry key="h" value="4" />
-          <entry key="txt" value="12" />
+          <entry key="h" value="5" />
+          <entry key="hpp" value="8" />
+          <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="12" />
-          <entry key="ObjectiveC" value="8" />
+          <entry key="CMakeLists.txt" value="14" />
+          <entry key="ObjectiveC" value="21" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="318" />
+          <entry key="cpp" value="660" />
           <entry key="gitignore" value="8" />
           <entry key="h" value="79" />
+          <entry key="hpp" value="2779" />
           <entry key="txt" value="340" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="340" />
-          <entry key="ObjectiveC" value="397" />
+          <entry key="Doxygen file" value="45" />
+          <entry key="ObjectiveC" value="3473" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -163,40 +176,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Subject.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/memory/MemoryPool.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="74" column="8" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
-                <element signature="e#725#750#0" expanded="true" />
+                <element signature="e#725#743#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/exceptions/Exception.cpp">
+        <entry file="file://$PROJECT_DIR$/src/common/Array.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="580">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="49" />
+              <folding>
+                <element signature="e#784#801#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/common/exceptions/Exception.hpp">
+        <entry file="file://$PROJECT_DIR$/src/common/ByteOrder.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+            <state relative-caret-position="875">
+              <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
+              <folding>
+                <element signature="e#795#815#0" expanded="true" />
+                <element signature="e#2963#2975#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/memory/MemoryPool.hpp">
+        <entry file="file://$PROJECT_DIR$/src/common/exceptions/Exception.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-736">
-              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+            <state relative-caret-position="744">
+              <caret line="210" column="44" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Types.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -236,15 +274,22 @@
         <option value="$PROJECT_DIR$/src/common/threading/ThreadSafeQueue.hpp" />
         <option value="$PROJECT_DIR$/src/common/memory/MemoryPool.hpp" />
         <option value="$PROJECT_DIR$/src/common/exceptions/Exception.cpp" />
+        <option value="$PROJECT_DIR$/src/common/Array.hpp" />
+        <option value="$PROJECT_DIR$/src/common/Types.hpp" />
         <option value="$PROJECT_DIR$/src/common/exceptions/Exception.hpp" />
         <option value="$PROJECT_DIR$/src/common/memory/MemoryPool.cpp" />
+        <option value="$PROJECT_DIR$/src/common/UUID.hpp" />
+        <option value="$PROJECT_DIR$/src/common/UUID.cpp" />
+        <option value="$PROJECT_DIR$/src/common/ByteOrder.hpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="955" />
+    <option name="x" value="388" />
+    <option name="y" value="191" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -259,32 +304,18 @@
           <expand>
             <path>
               <item name="export-giggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expert-giggle" type="462c0819:PsiDirectoryNode" />
+              <item name="export-giggle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="export-giggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expert-giggle" type="462c0819:PsiDirectoryNode" />
+              <item name="export-giggle" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="export-giggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expert-giggle" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="export-giggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expert-giggle" type="462c0819:PsiDirectoryNode" />
+              <item name="export-giggle" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="export-giggle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="expert-giggle" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="memory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,7 +327,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -344,9 +375,9 @@
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.app" />
-      <item itemvalue="Application.common" />
       <item itemvalue="Application.dal" />
       <item itemvalue="Application.model" />
+      <item itemvalue="Application.common" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -366,6 +397,8 @@
       <workItem from="1533724854655" duration="1799000" />
       <workItem from="1533769621324" duration="14789000" />
       <workItem from="1533831135802" duration="552000" />
+      <workItem from="1533841335363" duration="968000" />
+      <workItem from="1533842322333" duration="6428000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on common lib&#10;* Added a MemoryPool&#10;* Added a ThreadPool&#10;* Added a ThreadSafeQueue&#10;* Added a Exception">
       <created>1533831004919</created>
@@ -378,7 +411,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21474000" />
+    <option name="totallyTimeSpent" value="30050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,26 +423,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="955" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123931624" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13939634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20414507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20342946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908458" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289166" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32908458" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50106496" side_tool="true" weight="0.3284974" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32908458" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.20207255" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946752" visible="true" weight="0.36732328" />
-      <window_info anchor="bottom" id="TeamCity" order="13" weight="0.32908458" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3289166" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.20187062" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946752" weight="0.36710835" />
+      <window_info anchor="bottom" id="TeamCity" order="13" weight="0.3289166" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,11 +492,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/bootstrap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1605" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/bootstrap.h" />
     <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -471,13 +500,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/include/boost/filesystem.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/local/include/boost/filesystem.hpp" />
     <entry file="file://$PROJECT_DIR$/src/app/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -509,28 +532,11 @@
     <entry file="file://$PROJECT_DIR$/src/common/Temporary.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/queue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="292" column="18" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/queue" />
     <entry file="file://$PROJECT_DIR$/include/spdlog/async.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Subject.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/debug/common/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2942" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/debug/common/Makefile" />
     <entry file="file://$PROJECT_DIR$/build/debug/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-387" />
@@ -549,31 +555,11 @@
     <entry file="file://$PROJECT_DIR$/build/debug/export-giggle.cbp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/threading/ThreadPool.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_size_t.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/sys/_types/_size_t.h" />
     <entry file="file://$PROJECT_DIR$/src/common/logging/Logger.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -588,13 +574,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/exception">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1901">
-          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/exception" />
     <entry file="file://$PROJECT_DIR$/src/common/memory/MemoryPool.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-736">
@@ -609,20 +589,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/memory/MemoryPool.cpp">
+    <entry file="file://$PROJECT_DIR$/src/common/threading/ThreadPool.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="74" column="8" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-          <folding>
-            <element signature="e#725#750#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="860">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Subject.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Types.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/exceptions/Exception.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+        <state relative-caret-position="744">
+          <caret line="210" column="44" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/memory/MemoryPool.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="e#725#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/ByteOrder.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/move.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="186" column="4" selection-start-line="186" selection-start-column="4" selection-end-line="186" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/UUID.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6540">
+          <caret line="332" column="1" lean-forward="true" selection-start-line="332" selection-start-column="1" selection-end-line="332" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/UUID.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="182" column="24" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="24" />
+          <folding>
+            <element signature="e#780#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Array.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="e#784#801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/usr/share/cmake-3.10/Modules/FindBoost.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="800" selection-start-line="800" selection-end-line="800" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/ByteOrder.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="193" column="17" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
+          <folding>
+            <element signature="e#795#815#0" expanded="true" />
+            <element signature="e#2963#2975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

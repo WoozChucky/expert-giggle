@@ -207,7 +207,8 @@ namespace giggle::common::exception
 	 */
 	COMMON_DECLARE_EXCEPTION(RuntimeException, Exception)
 	COMMON_DECLARE_EXCEPTION(OutOfMemoryException, RuntimeException)
-
+	COMMON_DECLARE_EXCEPTION(DataException, RuntimeException)
+	COMMON_DECLARE_EXCEPTION(SyntaxException, DataException)
 } // namespace exception
 
 #endif //EXPORT_GIGGLE_EXCEPTION_HPP

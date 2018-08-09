@@ -5,11 +5,13 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Entity.h"
+#include <Entity.h>
+#include <Subject.hpp>
+#include <boost/filesystem.hpp>
 
 int main()
 {
-    Entity* e = new Entity();
+    auto e = new Entity();
     auto val = e->description == "My Description";
 
     std::cout << val << std::endl;

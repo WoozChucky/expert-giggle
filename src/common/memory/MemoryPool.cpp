@@ -16,8 +16,9 @@
 * all copies or substantial portions of the Software.
 */
 
+#include <cassert>
 #include "MemoryPool.hpp"
-#include "../exceptions/Exception.hpp"
+#include <exceptions/Exception.hpp>
 
 using namespace giggle::common::memory;
 

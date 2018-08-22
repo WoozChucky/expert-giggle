@@ -20,7 +20,6 @@
 
 #include <cstring>
 
-#include <exceptions/Exception.hpp>
 #include <ByteOrder.hpp>
 #include <exceptions/SyntaxException.hpp>
 

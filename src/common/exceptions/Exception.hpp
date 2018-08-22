@@ -191,7 +191,7 @@ namespace giggle::common::exception
 		CLS(const std::string& l_msg, const std::string& l_arg, int l_code = CODE);	\
 		CLS(const std::string& l_msg, const Exception& l_exc, int l_code = CODE);	\
 		CLS(const CLS& l_exc);														\
-		~CLS() noexcept;																\
+		~CLS() noexcept;															\
 		CLS& operator = (const CLS& l_exc);											\
 		const char* Name() const noexcept;											\
 		const char* ClassName() const noexcept;										\
@@ -202,6 +202,7 @@ namespace giggle::common::exception
 #define COMMON_DECLARE_EXCEPTION(CLS, BASE) \
 	COMMON_DECLARE_EXCEPTION_CODE(CLS, BASE, 0)
 
+#if USE_EX_MACROS
 	/**
 	 * Standard exception classes
 	 */
@@ -209,6 +210,8 @@ namespace giggle::common::exception
 	COMMON_DECLARE_EXCEPTION(OutOfMemoryException, RuntimeException)
 	COMMON_DECLARE_EXCEPTION(DataException, RuntimeException)
 	COMMON_DECLARE_EXCEPTION(SyntaxException, DataException)
+#endif
+
 } // namespace exception
 
 #endif //EXPORT_GIGGLE_EXCEPTION_HPP

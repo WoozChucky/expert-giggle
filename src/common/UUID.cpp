@@ -22,6 +22,7 @@
 
 #include <exceptions/Exception.hpp>
 #include <ByteOrder.hpp>
+#include <exceptions/SyntaxException.hpp>
 
 using namespace giggle::common;
 
@@ -80,7 +81,7 @@ void UUID::Swap(UUID &uuid)
 void UUID::Parse(const std::string &uuid)
 {
 	if (!TryParse(uuid))
-		throw giggle::common::exception::SyntaxException(uuid);
+		throw exception::SyntaxException(uuid);
 }
 
 bool UUID::TryParse(const std::string &uuid)

@@ -17,7 +17,7 @@ if(Boost_FOUND)
     message(STATUS "Current src Dir: ${CMAKE_CURRENT_SOURCE_DIR}")
 endif()
 
-add_library(${PROJECT_NAME} SHARED Subject.hpp Temporary.cpp threading/ThreadSafeQueue.hpp threading/ThreadPool.hpp logging/Logger.hpp memory/MemoryPool.cpp memory/MemoryPool.hpp exceptions/Exception.cpp exceptions/Exception.hpp Array.hpp UUID.hpp Types.hpp UUID.cpp ByteOrder.hpp exceptions/RuntimeException.hpp exceptions/OutOfMemoryException.hpp exceptions/SyntaxException.hpp exceptions/DataException.hpp memory/Buffer.cpp memory/Buffer.hpp exceptions/InvalidAccessException.hpp exceptions/LogicException.hpp exceptions/IndexOutOfBoundsException.hpp)
+add_library(${PROJECT_NAME} SHARED Subject.hpp Temporary.cpp threading/ThreadSafeQueue.hpp threading/ThreadPool.hpp logging/Logger.hpp memory/MemoryPool.cpp memory/MemoryPool.hpp exceptions/Exception.cpp exceptions/Exception.hpp Array.hpp UUID.hpp Types.hpp UUID.cpp ByteOrder.hpp exceptions/RuntimeException.hpp exceptions/OutOfMemoryException.hpp exceptions/SyntaxException.hpp exceptions/DataException.hpp memory/Buffer.hpp exceptions/InvalidAccessException.hpp exceptions/LogicException.hpp exceptions/IndexOutOfBoundsException.hpp security/Hash.hpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${Boost_INCLUDE_DIR} ${CMAKE_CURRENT_SOURCE_DIR} ${EXTERNAL_LIB_INCLUDE})
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})

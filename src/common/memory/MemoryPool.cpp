@@ -19,6 +19,7 @@
 #include <cassert>
 #include "MemoryPool.hpp"
 #include <exceptions/Exception.hpp>
+#include <exceptions/OutOfMemoryException.hpp>
 
 using namespace giggle::common::memory;
 
@@ -71,7 +72,7 @@ void *MemoryPool::GetMemory()
 			return new char[_block_size];
 		}
 		else
-			throw giggle::common::exception::OutOfMemoryException("MemoryPool exhausted.");
+			throw exception::OutOfMemoryException("MemoryPool exhausted.");
 	}
 	else
 	{

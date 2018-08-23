@@ -18,7 +18,6 @@
 
 #include <cassert>
 #include "MemoryPool.hpp"
-#include <exceptions/Exception.hpp>
 #include <exceptions/OutOfMemoryException.hpp>
 
 using namespace giggle::common::memory;

@@ -19,6 +19,8 @@
 #include <ostream>
 #include "JSONString.hpp"
 
+#include "UTF8.hpp"
+
 using namespace giggle::common::formatting;
 
 namespace
@@ -45,7 +47,7 @@ namespace
 
 		if (escapeAllUnicode)
 		{
-			std::string str = UTF8::escape(l_value.begin(), l_value.end(), true);
+			std::string str = UTF8::Escape(l_value.begin(), l_value.end(), true);
 			(l_obj.*l_write)(str.c_str(), str.size());
 		}
 		else
@@ -55,7 +57,7 @@ namespace
 				// Forward slash isn't strictly required by JSON spec, but some parser expect it.
 				if ((*it >= 0 && *it <= 31) || (*it == '"') || (*it == '\\') || (*it == '/'))
 				{
-					std::string str = UTF8::escape(it, it + 1, true);
+					std::string str = UTF8::Escape(it, it + 1, true);
 					(l_obj.*l_write)(str.c_str(), str.size());
 				}
 				else

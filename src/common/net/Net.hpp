@@ -33,6 +33,8 @@ namespace giggle::common::net
 	typedef int SocketFileDescriptor;
 
 	const UInt32 DEFAULT_MAX_CONNECTIONS = 128;
+	const UInt32 DEFAULT_BLOCK_SIZE = 1048576;
+	const UInt32 DEFAULT_MAX_BLOCKS = 100;
 
 } // namespace net
 

@@ -22,7 +22,7 @@
 #include "Net.hpp"
 
 #include <threading/ThreadPool.hpp>
-#include <Array.hpp>
+#include <memory/MemoryPool.hpp>
 
 namespace giggle::common::net
 {
@@ -41,7 +41,18 @@ namespace giggle::common::net
 
 	private:
 
-		static void * HandleConnection(SocketFileDescriptor l_descriptor);
+		typedef struct {
+			SocketFileDescriptor Descriptor;
+			std::string IPAddress;
+			UInt16 Port;
+			bool Connected;
+			bool Authenticated;
+			void* Buffer;
+		} ClientConnection;
+
+		static void * HandleConnection(ClientConnection l_connection);
+
+		ClientConnection GetClient(SocketFileDescriptor l_descriptor);
 
 		const UInt32 _port;
 		const UInt32 _maxConnections;
@@ -56,8 +67,9 @@ namespace giggle::common::net
 		SocketFileDescriptor _serverDescriptor;
 		SocketFileDescriptor _clientDescriptor;
 
-		giggle::common::threading::ThreadPool* _threadPool;
-		//giggle::common::threading::FastMutex _mutex;
+		threading::ThreadPool* _threadPool;
+		// threading::FastMutex _mutex;
+		memory::MemoryPool* _memoryPool;
 
 		bool _running;
 	};

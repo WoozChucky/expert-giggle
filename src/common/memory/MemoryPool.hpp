@@ -50,6 +50,7 @@ namespace giggle::common::memory
 		 * @param l_max_alloc  The max number of blocks that can be preallocated.
 		 */
 		explicit MemoryPool(std::size_t l_block_size, int l_pre_alloc = 0, int l_max_alloc = 0);
+		MemoryPool() = delete;
 
 		~MemoryPool();
 
@@ -89,7 +90,6 @@ namespace giggle::common::memory
 
 	private:
 
-		MemoryPool();
 		MemoryPool(const MemoryPool&);
 		MemoryPool& operator= (const MemoryPool&);
 

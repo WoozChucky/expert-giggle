@@ -71,7 +71,7 @@ void TcpServer::Listen()
 	_serverDescriptor = socket(AF_INET, SOCK_STREAM, 0);
 	if (_serverDescriptor < 0)
 	{
-		std::cerr << errno << std::endl;
+		std::cerr << std::strerror(errno) << std::endl;
 
 		throw exception::SystemException("Error opening socket.");
 	}
@@ -84,7 +84,7 @@ void TcpServer::Listen()
 
 	if (bind(_serverDescriptor, (struct sockaddr *) &_serverAddress, sizeof(_serverAddress)) < 0)
 	{
-		std::cerr << errno << std::endl;
+		std::cerr << std::strerror(errno) << std::endl;
 
 		close(_serverDescriptor);
 		throw exception::SystemException("Error binding socket.");
@@ -92,7 +92,7 @@ void TcpServer::Listen()
 
 	if (listen(_serverDescriptor, _maxConnections) != 0)
 	{
-		std::cerr << errno << std::endl;
+		std::cerr << std::strerror(errno) << std::endl;
 
 		close(_serverDescriptor);
 	}
@@ -110,8 +110,7 @@ void TcpServer::Listen()
 
 		if (_clientDescriptor < 0)
 		{
-			// todo
-			std::cerr << errno << std::endl;
+			std::cerr << std::strerror(errno) << std::endl;
 		}
 		else
 		{
@@ -166,12 +165,31 @@ TcpServer::ClientConnection TcpServer::GetClient(SocketFileDescriptor l_descript
 
 void * TcpServer::HandleConnection(ClientConnection l_connection)
 {
+	// FIXME: This is not allocating the desired memory correctly.
+	auto buffer = static_cast<char *>(l_connection.Buffer);
+
+	std::cout << "Client buffer size: " << sizeof(l_connection.Buffer) << " bytes" << std::endl;
 
 	while (l_connection.Connected)
 	{
-		auto bytesRead = recv(l_connection.Descriptor, l_connection.Buffer, sizeof(l_connection.Buffer), 0);
+		auto bytesRead = recv(l_connection.Descriptor, buffer, sizeof(buffer), 0);
 
-		break;
+		if (bytesRead == -1)
+		{
+			std::cerr << std::strerror(errno) << std::endl;
+			break;
+		}
+
+		std::cout << "Bytes Read: " << bytesRead << std::endl;
+		std::cout << "Received: " << std::endl;
+
+		for (int i = 0; i < bytesRead + 1; ++i) {
+			std::cout << buffer[i];
+
+		}
+
+		if(!l_connection.Connected)
+			break;
 	}
 
 	// Returns the buffer so it can be properly freed from memory

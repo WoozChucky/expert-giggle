@@ -1,20 +1,58 @@
-//
-// Created by nunol on 8/7/2018.
-//
+/*
+* export-giggle
+* app.cpp
+* Created by Nuno Levezinho on 01/07/2018.
+*
+* Copyright (c) 2018 [Nuno Levezinho] All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*/
 
 #include <cstdlib>
 #include <iostream>
+#include <signal.h>
 
-#include <Entity.h>
-#include <Subject.hpp>
-#include <boost/filesystem.hpp>
+#include <net/TcpServer.hpp>
 
-int main()
+using namespace giggle::common::net;
+
+TcpServer* server = nullptr;
+
+void my_handler(int l_action)
 {
-    auto e = new Entity();
-    auto val = e->description == "My Description";
+	std::cout << "Caught action -> " << l_action << std::endl;
+	server->Close();
+}
 
-    std::cout << val << std::endl;
+
+
+int main(int argc, char** argv)
+{
+	struct sigaction signHandler{};
+
+	signHandler.sa_handler = my_handler;
+	sigemptyset(&signHandler.sa_mask);
+	signHandler.sa_flags = 0;
+
+	sigaction(SIGINT, &signHandler, nullptr);
+	sigaction(SIGQUIT, &signHandler, nullptr);
+	sigaction(SIGTERM, &signHandler, nullptr);
+
+	// Used usually on another process
+	// kill(::getpid(), SIGTERM);
+	// Used usually on the same(self) process
+	// raise(SIGTERM);
+
+    server = new TcpServer(8050, 128);
+    server->Listen();
 
     std::cout << "Application" << std::endl;
     return EXIT_SUCCESS;

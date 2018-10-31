@@ -51,8 +51,17 @@ int main(int argc, char** argv)
 	// Used usually on the same(self) process
 	// raise(SIGTERM);
 
-    server = new TcpServer(8050, 128);
-    server->Listen();
+	auto pool = new giggle::common::memory::MemoryPool(256, 0, 100);
+
+	auto block = static_cast<char *>(pool->GetMemory());
+
+	if (block)
+	{
+		std::cout << "Block allocated -> " << sizeof(block) << std::endl;
+	}
+
+    //server = new TcpServer(8050, 128);
+    //server->Listen();
 
     std::cout << "Application" << std::endl;
     return EXIT_SUCCESS;

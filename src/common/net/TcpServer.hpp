@@ -23,6 +23,7 @@
 
 #include <threading/ThreadPool.hpp>
 #include <memory/MemoryPool.hpp>
+#include <memory/Buffer.hpp>
 
 namespace giggle::common::net
 {
@@ -47,7 +48,7 @@ namespace giggle::common::net
 			UInt16 Port;
 			bool Connected;
 			bool Authenticated;
-			void* Buffer;
+			char* Buffer;
 		} ClientConnection;
 
 		static void * HandleConnection(ClientConnection l_connection);

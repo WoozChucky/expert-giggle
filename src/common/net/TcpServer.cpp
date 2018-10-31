@@ -142,6 +142,10 @@ void TcpServer::Listen()
 
 }
 
+auto operator""_MB( unsigned long long const x )
+-> long
+{ return static_cast<long>(1024L * 1024L * x); }
+
 TcpServer::ClientConnection TcpServer::GetClient(SocketFileDescriptor l_descriptor)
 {
 	struct sockaddr_in addr{};
@@ -158,7 +162,7 @@ TcpServer::ClientConnection TcpServer::GetClient(SocketFileDescriptor l_descript
 	connection.Descriptor 				= l_descriptor;
 	connection.IPAddress 				= client_ip;
 	connection.Port 					= ntohs(addr.sin_port);
-	connection.Buffer 					= _memoryPool->GetMemory();
+	connection.Buffer 					= static_cast<char *>(_memoryPool->GetMemory());
 
 	return connection;
 }
@@ -166,7 +170,7 @@ TcpServer::ClientConnection TcpServer::GetClient(SocketFileDescriptor l_descript
 void * TcpServer::HandleConnection(ClientConnection l_connection)
 {
 	// FIXME: This is not allocating the desired memory correctly.
-	auto buffer = static_cast<char *>(l_connection.Buffer);
+	auto buffer = l_connection.Buffer;
 
 	std::cout << "Client buffer size: " << sizeof(l_connection.Buffer) << " bytes" << std::endl;
 
